@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just For Fun</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <button id="btn" onclick="checkAge()"> Check </button>
+        <button id="btn" onclick="showText()"> Check Profile </button>
+        <p id="random"></p>
+        <p id="welcome"></p>
+        <p id="wait"></p>
+    </div>
+
+    <form class="form">
+        First name: <input type="text" name="name" formControlName="name" id="name">
+        Mobile number: <input type="number" formControlName="number" id="mobNum">
+        Gender: <select formControlName="gender" id="gender">
+            <option>select</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Transgender</option>
+        </select>
+        <div class="btn" style="text-align: center; margin: 5px;">
+        <input type="submit" value="Submit Now" id="save" style="background-color: rgb(85, 241, 85)">
+        <input type="reset" value="Reset Now" id="reset" style="background-color: grey">
+        </div>
+        <div>
+            <h3 class="showDetails"></h3>
+        </div>
+
+
+    </form>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
